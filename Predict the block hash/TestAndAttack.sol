@@ -35,29 +35,34 @@ contract PredictTheBlockHashChallenge {
     }
 }
 
-
 contract Attack {
     PredictTheBlockHashChallenge externalContract;
     bytes32 hash;
     uint256 blockCounter;
-    uint currentBlock;
+    uint256 currentBlock;
 
     constructor() {
         externalContract = PredictTheBlockHashChallenge(
             0x3090fe4fff93A1C0F55E5bA52e3e7844AD691233
         );
-        
-            blockCounter = block.number + 1;
+
+        blockCounter = block.number + 1;
     }
 
-    function attack() public view returns (bytes32, uint256, uint) {
-        
+    function attack()
+        public
+        view
+        returns (
+            bytes32,
+            uint256,
+            uint256
+        )
+    {
         currentBlock = block.number;
- hash = block.blockhash(blockCounter);
+        hash = block.blockhash(blockCounter);
         return (hash, blockCounter, currentBlock);
     }
 }
-
 
 //hash of the given block - only works for 256 most recent, excluding current, blocks
 //putting as value 0x0000000000000000000000000000000000000000000000000000000000000000
