@@ -1,0 +1,15 @@
+{
+  "name": "capturetheether",
+  "version": "1.0.0",
+  "description": "capture the ether challenge ",
+  "main": "converter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Justinas Kairys",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^5.4.0",
+    "web3": "^1.4.0"
+  }
+}
