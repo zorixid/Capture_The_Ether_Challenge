@@ -1,10 +1,14 @@
+
+# CaptureTheEther Smart Contract challenge
+
+## Current Score - 2600 points (06 July 2021)
+
 USER:  0x0f12A5C97b04d7F44997f64CDE7d490Cd895Fd1f
+USERNAME: BBDD
 Network: Ropsten
 
+![Preview](screenshot.png)
 
-How do I win?
-The game consists of a series of challenges in different categories. You earn points for every challenge you complete. Harder challenges are worth more points.
 
-Each challenge is in the form of a smart contract with an isComplete function (or public state variable). The goal is always to make isComplete() return true.
+I have added solutions and snippets of code I wrote to solve some of the challenges. 
 
-If you're into that stort of thing, there's a leaderboard.
